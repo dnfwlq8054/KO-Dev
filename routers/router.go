@@ -7,9 +7,9 @@ import (
 
 func InitRouter() *gin.Engine {
 	router := gin.Default()
-	//router.Group("/api/qna")
+	apiv1 := router.Group("/api/qna")
 
-	router.GET("/qna/all", qna.GetAll)
+	apiv1.GET("/qna/all", qna.GetAll)
 
 	return router
 }
