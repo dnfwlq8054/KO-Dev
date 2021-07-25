@@ -6,10 +6,9 @@ import (
 
 func InitRouter() *gin.Engine {
 	router := gin.Default()
+	apiv1 := router.Group("/api/qna")
 
-	router.GET("/ping", func(c *gin.Context) {
-		c.String(200, "pong")
-	})
+	apiv1.GET("/qna/all", qna.all)
 
 	return router
 }
