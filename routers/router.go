@@ -13,9 +13,9 @@ func InitRouter() *gin.Engine {
 	//	router.Group("/api/qna")
 
 	router.GET("/qna/all", qna.GetAll)
-	router.GET("/qna/all", event.GetAll)
-	router.GET("/qna/all", discussion.GetAll)
-	router.GET("/qna/all", toyproject.GetAll)
+	router.GET("/event/all", event.GetAll)
+	router.GET("/discussion/all", discussion.GetAll)
+	router.GET("/toyproject/all", toyproject.GetAll)
 
 	router.GET("/qna/ping", func(c *gin.Context) {
 		c.String(200, "pong")
