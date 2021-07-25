@@ -1,4 +1,4 @@
-package qna
+package discussion
 
 import "github.com/gin-gonic/gin"
 

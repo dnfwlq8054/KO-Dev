@@ -1,4 +1,4 @@
-package qna
+package event
 
 import "github.com/gin-gonic/gin"
 

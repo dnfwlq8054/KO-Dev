@@ -1,4 +1,4 @@
-package qna
+package toyproject
 
 import "github.com/gin-gonic/gin"
 
